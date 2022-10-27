@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import { useAuth } from "../context/AuthContext";
 import "./SignUp.scss";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, firestoreDb } from "../firebase";
@@ -22,7 +21,7 @@ export default function SignUp() {
       .then((e) => {
         console.log("user created", e);
         firestoreDb.collection("users").doc(e.user.uid).set(formData);
-        navigate("/dashboard");
+        navigate("/");
       });
   }
 

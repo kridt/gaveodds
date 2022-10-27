@@ -7,6 +7,7 @@ import Login from "./functions/Login";
 import ProtectedRoute from "./components/PrivateRoute";
 import ForgotPassword from "./functions/ForgotPassword";
 import UpdateProfile from "./functions/UpdateProfile";
+import AdminPanel from "./page/AdminPanel";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
             </Route>
             <Route element={<ProtectedRoute />}>
               <Route path="/updateProfile" element={<UpdateProfile />} />
+            </Route>
+            <Route element={<ProtectedRoute />}>
+              <Route path="/adminPanel" element={<AdminPanel />} />
             </Route>
 
             <Route path="/signup" element={<SignUp />} />
