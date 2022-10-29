@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect } from "react";
 import "./SignUp.scss";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, firestoreDb } from "../firebase";
