@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import SignOutButton from "../components/SignOutButton";
-import { useAuth } from "../context/AuthContext";
+
 import { auth } from "../firebase";
 import "./Dashboard.scss";
 
