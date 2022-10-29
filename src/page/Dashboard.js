@@ -34,7 +34,7 @@ export default function Dashboard() {
 
       <h1>dashboard</h1>
       <div>
-        <p>Email: {auth?.currentUser.email}</p>
+        <p>Email: {auth?.currentUser?.email}</p>
       </div>
       <button onClick={() => auth.signOut()}>Log ud</button>
     </div>
