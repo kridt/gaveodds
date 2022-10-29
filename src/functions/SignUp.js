@@ -7,6 +7,7 @@ import { useAuth } from "../context/AuthContext";
 export default function SignUp() {
   const navigate = useNavigate();
   const { currentUser } = useAuth();
+
   useEffect(() => {
     if (!currentUser) {
       return;
@@ -26,7 +27,7 @@ export default function SignUp() {
     console.log(formData);
 
     try {
-      auth
+      await auth
         .createUserWithEmailAndPassword(formData.email, e.target.password.value)
         .then((e) => {
           console.log("user created", e);
