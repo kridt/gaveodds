@@ -9,13 +9,13 @@ export default function Dashboard() {
   const [admin, setAdmin] = useState(false);
 
   useEffect(() => {
-    if (auth?.currentUser.uid === "INdKwGos80YWBdyJ9rVF0rOLM3W2") {
-      if (auth?.currentUser.email === "chrnielsen2003@gmail.com") {
+    if (auth?.currentUser?.uid === "INdKwGos80YWBdyJ9rVF0rOLM3W2") {
+      if (auth?.currentUser?.email === "chrnielsen2003@gmail.com") {
         setAdmin(true);
       }
     }
-    if (auth?.currentUser.uid === "xQelb4z9KIejkFmFG5jIHfiXtKr1") {
-      if (auth?.currentUser.email === "nstaalkjaer@gmail.com") {
+    if (auth?.currentUser?.uid === "xQelb4z9KIejkFmFG5jIHfiXtKr1") {
+      if (auth?.currentUser?.email === "nstaalkjaer@gmail.com") {
         setAdmin(true);
       }
     }
@@ -35,7 +35,7 @@ export default function Dashboard() {
       <div>
         <p>Email: {auth?.currentUser?.email}</p>
       </div>
-      <button onClick={() => auth.signOut()}>Log ud</button>
+      <button onClick={() => auth?.signOut()}>Log ud</button>
     </div>
   );
 }
