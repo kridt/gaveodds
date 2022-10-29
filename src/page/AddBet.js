@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
 
-export default function AdminPanel() {
+export default function AddBet() {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -23,13 +23,21 @@ export default function AdminPanel() {
         }
       }
     }
-  }, [auth, navigate]);
-
+  }, [navigate]);
   return (
     <div>
-      <h1>Admin panel</h1>
+      <Link to={"/adminPanel"}>Tilbage</Link>
+      <h1>Tilføj bet</h1>
 
-      <Link to={"/addBet"}>Tilføj en odds</Link>
+      <form>
+        <div>
+          <label htmlFor="liga">Liga:</label>
+          <select>
+            <option value=""></option>
+            <option value="CL">Champions league</option>
+          </select>
+        </div>
+      </form>
     </div>
   );
 }

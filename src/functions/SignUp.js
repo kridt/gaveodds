@@ -1,10 +1,19 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./SignUp.scss";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, firestoreDb } from "../firebase";
+import { useAuth } from "../context/AuthContext";
 
 export default function SignUp() {
   const navigate = useNavigate();
+  const { currentUser } = useAuth();
+  useEffect(() => {
+    if (!currentUser) {
+      return;
+    } else {
+      navigate("/");
+    }
+  }, [currentUser, navigate]);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -16,13 +25,17 @@ export default function SignUp() {
     };
     console.log(formData);
 
-    auth
-      .createUserWithEmailAndPassword(formData.email, e.target.password.value)
-      .then((e) => {
-        console.log("user created", e);
-        firestoreDb.collection("users").doc(e.user.uid).set(formData);
-        navigate("/");
-      });
+    try {
+      auth
+        .createUserWithEmailAndPassword(formData.email, e.target.password.value)
+        .then((e) => {
+          console.log("user created", e);
+          firestoreDb.collection("users").doc(e.user.uid).set(formData);
+          navigate("/");
+        });
+    } catch (error) {
+      alert(error);
+    }
   }
 
   return (
