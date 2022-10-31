@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { auth } from "../firebase";
+import { auth, firestoreDb } from "../firebase";
 
 export default function AddBet() {
   const navigate = useNavigate();
@@ -25,7 +25,7 @@ export default function AddBet() {
     oddsArray.forEach((e) => {
       return (totalOdds = totalOdds * e);
     });
-    console.log(totalOdds.toFixed(2));
+
     return totalOdds.toFixed(2);
   }
 
@@ -74,6 +74,20 @@ export default function AddBet() {
 
   function playKupon(e) {
     e.preventDefault();
+    var doneKupon = {
+      inskud: indskud,
+      kampe: kupon,
+      potentielGevinst: totalOddsCalc() * indskud,
+    };
+
+    firestoreDb
+      .collection("alleOdds")
+      .add(doneKupon)
+      .then(() => {
+        navigate("/adminPanel");
+      });
+
+    console.log(doneKupon);
   }
 
   function teamsSet(league) {
@@ -131,7 +145,6 @@ export default function AddBet() {
 
             <datalist id="awayTeam">
               {teams?.map((e) => {
-                console.log(e);
                 return <option key={e.name} value={e.name}></option>;
               })}
             </datalist>
