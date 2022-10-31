@@ -1,0 +1,346 @@
+{
+  "superliga": [
+    {
+      "name": "FC København",
+      "nation": "Danmark"
+    },
+    {
+      "name": "Nordsjælland",
+      "nation": "Danmark"
+    },
+    {
+      "name": "Viborg",
+      "nation": "Danmark"
+    },
+    {
+      "name": "Randers FC",
+      "nation": "Danmark"
+    },
+    {
+      "name": "Silkeborg",
+      "nation": "Danmark"
+    },
+    {
+      "name": "Midtjylland",
+      "nation": "Danmark"
+    },
+    {
+      "name": "AGF",
+      "nation": "Danmark"
+    },
+    {
+      "name": "Brøndby",
+      "nation": "Danmark"
+    },
+    {
+      "name": "OB",
+      "nation": "Danmark"
+    },
+    {
+      "name": "Horsens",
+      "nation": "Danmark"
+    },
+    {
+      "name": "Aalborg",
+      "nation": "Danmark"
+    },
+    {
+      "name": "Lyngby",
+      "nation": "Danmark"
+    }
+  ],
+  "championsLeague": [
+    {
+      "name": "Napoli",
+      "nation": "Italien"
+    },
+    {
+      "name": "Liverpool",
+      "nation": "England"
+    },
+    {
+      "name": "Ajax",
+      "nation": "Holland"
+    },
+    {
+      "name": "Rangers",
+      "nation": "Skotland"
+    },
+    {
+      "name": "Club Brugge",
+      "nation": "Belgien"
+    },
+    {
+      "name": "FC Porto",
+      "nation": "Portugal"
+    },
+    {
+      "name": "Atl. Madrid",
+      "nation": "Spanien"
+    },
+    {
+      "name": "Bayer Leverkusen",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Bayern Munich",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Inter",
+      "nation": "Italien"
+    },
+    {
+      "name": "Barcelona",
+      "nation": "Spanien"
+    },
+    {
+      "name": "Plzen",
+      "nation": "Tjekkiet"
+    },
+    {
+      "name": "Tottenham",
+      "nation": "England"
+    },
+    {
+      "name": "Sporting CP",
+      "nation": "Portugal"
+    },
+    {
+      "name": "Eintracht Frankfurt",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Marseille",
+      "nation": "Frankrig"
+    },
+    {
+      "name": "Chelsea",
+      "nation": "England"
+    },
+    {
+      "name": "AC Milan",
+      "nation": "Italien"
+    },
+    {
+      "name": "Salzburg",
+      "nation": "Østrig"
+    },
+    {
+      "name": "Dynamo Zagreb",
+      "nation": "Kroatien"
+    },
+    {
+      "name": "Real Madrid",
+      "nation": "Spanien"
+    },
+    {
+      "name": "RB Leipzig",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Shaktar Donetsk",
+      "nation": "Ukraine"
+    },
+    {
+      "name": "Celtic",
+      "nation": "Skotland"
+    },
+    {
+      "name": "Manchester City",
+      "nation": "England"
+    },
+    {
+      "name": "Dortmund",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Sevilla",
+      "nation": "Spanien"
+    },
+    {
+      "name": "FC København",
+      "nation": "Danmark"
+    },
+    {
+      "name": "Paris SG",
+      "nation": "Frankrig"
+    },
+    {
+      "name": "Benfica",
+      "nation": "Portugal"
+    },
+    {
+      "name": "Juventus",
+      "nation": "Italien"
+    },
+    {
+      "name": "Maccabi Haifa",
+      "nation": "Israel"
+    }
+  ],
+  "premierLeagueEngland": [
+    {
+      "name": "Arsenal",
+      "nation": "England"
+    },
+    {
+      "name": "Manchester City",
+      "nation": "England"
+    },
+    {
+      "name": "Tottenham",
+      "nation": "England"
+    },
+    {
+      "name": "Newcastle",
+      "nation": "England"
+    },
+    {
+      "name": "Manchester United",
+      "nation": "England"
+    },
+    {
+      "name": "Chelsea",
+      "nation": "England"
+    },
+    {
+      "name": "Fullham",
+      "nation": "England"
+    },
+    {
+      "name": "Brighton",
+      "nation": "England"
+    },
+    {
+      "name": "Liverpool",
+      "nation": "England"
+    },
+    {
+      "name": "Crystal Palace",
+      "nation": "England"
+    },
+    {
+      "name": "Brentford",
+      "nation": "England"
+    },
+    {
+      "name": "Everton",
+      "nation": "England"
+    },
+    {
+      "name": "West Ham",
+      "nation": "England"
+    },
+    {
+      "name": "Bournemouth",
+      "nation": "England"
+    },
+    {
+      "name": "Leeds",
+      "nation": "England"
+    },
+    {
+      "name": "Aston Villa",
+      "nation": "England"
+    },
+    {
+      "name": "Southamton",
+      "nation": "England"
+    },
+    {
+      "name": "Leicester",
+      "nation": "England"
+    },
+    {
+      "name": "Wolves",
+      "nation": "England"
+    },
+    {
+      "name": "Nottingham",
+      "nation": "England"
+    }
+  ],
+  "bundesliga": [
+    {
+      "name": "Union Berlin",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Bayern Munich",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Freiburg",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Dortmund",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Eintracht Frankfurt",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "RB Leipzig",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Hoffenheim",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Werder Bremen",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Mainz",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "FC Koln",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Monchengladbach",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Wolfsburg",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Augsburg",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Herta Berlin",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Stuttgart",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Bayer Leverkusen",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Bochum",
+      "nation": "Tyskland"
+    },
+    {
+      "name": "Schalke 04",
+      "nation": "Tyskland"
+    }
+  ],
+  "laLiga": [],
+  "serieA": [],
+  "championsship": [],
+  "ligue1": [],
+  "worldCup": [],
+  "eredivise": [],
+  "europaLeague": [],
+  "europaConferenceLeague": []
+}
