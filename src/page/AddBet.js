@@ -8,9 +8,10 @@ export default function AddBet() {
   const [kupon, setKupon] = useState([]);
   const [indskud, setIndskud] = useState(1);
   const [leagues, setLeagues] = useState([]);
+  const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    axios.get("/ligaer.json").then((data) => console.log(data.data));
+    axios.get("/ligaer.json").then((data) => setLeagues(data.data));
   }, []);
 
   function totalOddsCalc(e) {
@@ -73,6 +74,11 @@ export default function AddBet() {
     e.preventDefault();
   }
 
+  function teamsSet(league) {
+    setTeams(leagues?.find((leaguer) => leaguer.name === league).teams);
+    console.log(teams);
+  }
+
   return (
     <div>
       <Link to={"/adminPanel"}>Tilbage</Link>
@@ -85,25 +91,48 @@ export default function AddBet() {
         </div>
         <div>
           <label htmlFor="liga">Liga:</label>
-          <input required list="leagueList" name="league" />
+          <input
+            required
+            list="leagueList"
+            name="league"
+            onBlur={(e) => teamsSet(e.target.value)}
+          />
 
           <datalist id="leagueList">
-            <option value="Premier League" id="1"></option>
+            {leagues?.map((data) => {
+              return <option value={data.name}></option>;
+            })}
+
+            {/* <option value="Premier League" id="1"></option>
             <option value="Bundesliga" id="2"></option>
             <option value="La Liga" id="3"></option>
             <option value="Ligue 1" id="4"></option>
             <option value="Champions league" id="5"></option>
             <option value="conferense league" id="6"></option>
-            <option value="europa league" id="7"></option>
+            <option value="europa league" id="7"></option> */}
           </datalist>
 
           <div>
             <label htmlFor="home">Hjemmehold:</label>
-            <input required type="text" name="home" />
+            <input required list="homeTeam" name="home" />
+
+            <datalist id="homeTeam">
+              {teams?.map((e) => {
+                console.log(e);
+                return <option key={e.name} value={e.name}></option>;
+              })}
+            </datalist>
           </div>
           <div>
             <label htmlFor="away">Udehold:</label>
-            <input required type="text" name="away" />
+            <input required list="awayTeam" name="away" />
+
+            <datalist id="awayTeam">
+              {teams?.map((e) => {
+                console.log(e);
+                return <option key={e.name} value={e.name}></option>;
+              })}
+            </datalist>
           </div>
 
           <div>
