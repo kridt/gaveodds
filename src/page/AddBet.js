@@ -63,6 +63,8 @@ export default function AddBet() {
     };
 
     setKupon((oldarray) => [...oldarray, matchOdds]);
+
+    document.getElementById("oddsForm").reset();
   }
 
   function dateConverter(e) {
@@ -84,7 +86,7 @@ export default function AddBet() {
       <Link to={"/adminPanel"}>Tilbage</Link>
       <h1>Tilføj bet</h1>
 
-      <form onSubmit={(e) => addMatchBet(e)}>
+      <form id="oddsForm" onSubmit={(e) => addMatchBet(e)}>
         <div>
           <label htmlFor="date">Vælg dato for kamp</label>
           <input required type="date" name="date" />
@@ -148,7 +150,7 @@ export default function AddBet() {
 
           <div>
             <label htmlFor="value">Hvad er oddsen på den kamp?</label>
-            <input required name="finalOdds" type={"tel"} />
+            <input required name="finalOdds" type={"numbers"} />
           </div>
         </div>
 
