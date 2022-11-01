@@ -41,25 +41,17 @@ export default function AllOdds() {
   }
 
   function changeWin(e2, id) {
-    try {
-      firestoreDb
-        .collection("alleOdds")
-        .doc(id)
-        .update({
-          win: Boolean(e2),
-        });
-    } catch (error) {
-      console.error(error);
-      return;
-    }
+    firestoreDb.collection("alleOdds").doc(id).update({
+      win: e2,
+    });
 
     if (e2 === "TBD") {
       setWin("blue");
     }
-    if (Boolean(e2) === true) {
+    if (e2 === "true") {
       setWin("green");
     }
-    if (Boolean(e2) === false) {
+    if (e2 === "false") {
       setWin("red");
     }
   }
