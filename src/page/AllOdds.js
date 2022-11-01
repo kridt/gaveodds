@@ -41,8 +41,21 @@ export default function AllOdds() {
   }
 
   function changeWin(e2, id) {
+    var result = "TBD";
+
+    if (e2 === "TBD") {
+      result = "TDB";
+    }
+    if (e2 === "true") {
+      result = true;
+    }
+    if (e2 === "false") {
+      result = false;
+    }
+
+    console.log(result);
     firestoreDb.collection("alleOdds").doc(id).update({
-      win: e2,
+      win: result,
     });
 
     if (e2 === "TBD") {
