@@ -30,6 +30,7 @@ export default function AdminPanel() {
       <h1>Admin panel</h1>
 
       <Link to={"/addBet"}>Tilføj en odds</Link>
+      <Link to={"/allodds"}>Se alle odds</Link>
     </div>
   );
 }

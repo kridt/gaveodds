@@ -9,6 +9,7 @@ import ForgotPassword from "./functions/ForgotPassword";
 import UpdateProfile from "./functions/UpdateProfile";
 import AdminPanel from "./page/AdminPanel";
 import AddBet from "./page/AddBet";
+import AllOdds from "./page/AllOdds";
 
 function App() {
   return (
@@ -29,10 +30,16 @@ function App() {
             <Route element={<ProtectedRoute />}>
               <Route path="/addBet" element={<AddBet />} />
             </Route>
+            <Route element={<ProtectedRoute />}>
+              <Route path="/allodds" element={<AllOdds />} />
+            </Route>
+
+            <Route element={<ProtectedRoute />}>
+              <Route path="/forgotPassword" element={<ForgotPassword />} />
+            </Route>
 
             <Route path="/signup" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/forgotPassword" element={<ForgotPassword />} />
           </Routes>
         </AuthProvider>
       </Router>

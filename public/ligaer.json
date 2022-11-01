@@ -349,38 +349,879 @@
   },
   {
     "name": "La Liga",
-    "teams": []
+    "teams": [
+      {
+        "name": "Barcelona",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Real Madrid",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Atl. Madrid",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Betis",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Real Sociedad",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Ath Bilbao",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Osasuna",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Villareal",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Rayo Vallecano",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Valencia",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Valladolid",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Mallorca",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Almeria",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Getafe",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Espanyol",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Celta Vigo",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Girona",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Sevilla",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Cadiz CF",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Elche",
+        "nation": "Spanien"
+      }
+    ]
   },
   {
     "name": "Serie A",
-    "teams": []
+    "teams": [
+      {
+        "name": "Napoli",
+        "nation": "Italien"
+      },
+      {
+        "name": "Atalanta",
+        "nation": "Italien"
+      },
+      {
+        "name": "AC Milan",
+        "nation": "Italien"
+      },
+      {
+        "name": "AS Roma",
+        "nation": "Italien"
+      },
+      {
+        "name": "Lazio",
+        "nation": "Italien"
+      },
+      {
+        "name": "Inter",
+        "nation": "Italien"
+      },
+      {
+        "name": "Juventus",
+        "nation": "Italien"
+      },
+      {
+        "name": "Udinese",
+        "nation": "Italien"
+      },
+      {
+        "name": "Torino",
+        "nation": "Italien"
+      },
+      {
+        "name": "Salernitana",
+        "nation": "Italien"
+      },
+      {
+        "name": "Sassuolo",
+        "nation": "Italien"
+      },
+      {
+        "name": "Bologna",
+        "nation": "Italien"
+      },
+      {
+        "name": "Fiorentina",
+        "nation": "Italien"
+      },
+      {
+        "name": "Empoli",
+        "nation": "Italien"
+      },
+      {
+        "name": "Monza",
+        "nation": "Italien"
+      },
+      {
+        "name": "Spezia",
+        "nation": "Italien"
+      },
+      {
+        "name": "Lecce",
+        "nation": "Italien"
+      },
+      {
+        "name": "Sampdoria",
+        "nation": "Italien"
+      },
+      {
+        "name": "Verona",
+        "nation": "Italien"
+      },
+      {
+        "name": "Cremonese",
+        "nation": "Italien"
+      }
+    ]
   },
   {
     "name": "Champoinsship",
-    "teams": []
+    "teams": [
+      {
+        "name": "Burnley",
+        "nation": "England"
+      },
+      {
+        "name": "Blackburn",
+        "nation": "England"
+      },
+      {
+        "name": "QPR",
+        "nation": "England"
+      },
+      {
+        "name": "Sheffield United",
+        "nation": "England"
+      },
+      {
+        "name": "Norwich",
+        "nation": "England"
+      },
+      {
+        "name": "Swansea",
+        "nation": "England"
+      },
+      {
+        "name": "Watford",
+        "nation": "England"
+      },
+      {
+        "name": "Millwall",
+        "nation": "England"
+      },
+      {
+        "name": "Luton",
+        "nation": "England"
+      },
+      {
+        "name": "Preston",
+        "nation": "England"
+      },
+      {
+        "name": "Reading",
+        "nation": "England"
+      },
+      {
+        "name": "Birmingham",
+        "nation": "England"
+      },
+      {
+        "name": "Rotherham",
+        "nation": "England"
+      },
+      {
+        "name": "Bristol City",
+        "nation": "England"
+      },
+      {
+        "name": "Blackpool",
+        "nation": "England"
+      },
+      {
+        "name": "Sunderland",
+        "nation": "England"
+      },
+      {
+        "name": "Cardiff",
+        "nation": "England"
+      },
+      {
+        "name": "Hull",
+        "nation": "England"
+      },
+      {
+        "name": "Stoke",
+        "nation": "England"
+      },
+      {
+        "name": "Wigan",
+        "nation": "England"
+      },
+      {
+        "name": "Middlesbrough",
+        "nation": "England"
+      },
+      {
+        "name": "Coventry",
+        "nation": "England"
+      },
+      {
+        "name": "Huddersfield",
+        "nation": "England"
+      },
+      {
+        "name": "West Brom",
+        "nation": "England"
+      }
+    ]
   },
   {
     "name": "Ligue 1",
-    "teams": []
+    "teams": [
+      {
+        "name": "Paris SG",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Lens",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Rennes",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Lorient",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Marseille",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Monaco",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Lille",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Lyon",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Clermont",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Nice",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Toulouse",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Troyes",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Reims",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Montpellier",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Nantes",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Auxerre",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Strasbourg",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Brest",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "AC Ajaccio",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Angers",
+        "nation": "Frankrig"
+      }
+    ]
   },
   {
     "name": "World Cup",
-    "teams": []
+    "teams": [
+      {
+        "name": "Holland"
+      },
+      {
+        "name": "Ecuador"
+      },
+      {
+        "name": "Senegal"
+      },
+      {
+        "name": "Qatar"
+      },
+      {
+        "name": "England"
+      },
+      {
+        "name": "USA"
+      },
+      {
+        "name": "Iran"
+      },
+      {
+        "name": "Wales"
+      },
+      {
+        "name": "Polen"
+      },
+      {
+        "name": "Argentina"
+      },
+      {
+        "name": "Mexico"
+      },
+      {
+        "name": "Saudi Arabien"
+      },
+      {
+        "name": "Frankrig"
+      },
+      {
+        "name": "Danmark"
+      },
+      {
+        "name": "Tunesien"
+      },
+      {
+        "name": "Australien"
+      },
+      {
+        "name": "Tyskland"
+      },
+      {
+        "name": "Spanien"
+      },
+      {
+        "name": "Costa Rica"
+      },
+      {
+        "name": "Japan"
+      },
+      {
+        "name": "Kroatien"
+      },
+      {
+        "name": "Belgien"
+      },
+      {
+        "name": "Canada"
+      },
+      {
+        "name": "Morocco"
+      },
+      {
+        "name": "Schweiz"
+      },
+      {
+        "name": "Serbien"
+      },
+      {
+        "name": "Brazilien"
+      },
+      {
+        "name": "Cameroon"
+      },
+      {
+        "name": "Portugal"
+      },
+      {
+        "name": "Uruguay"
+      },
+      {
+        "name": "Ghana"
+      },
+      {
+        "name": "Sydkorea"
+      }
+    ]
   },
   {
     "name": "Eredivisie",
-    "teams": []
+    "teams": [
+      {
+        "name": "Ajax",
+        "nation": "Holland"
+      },
+      {
+        "name": "PSV",
+        "nation": "Holland"
+      },
+      {
+        "name": "AZ Alkmaar",
+        "nation": "Holland"
+      },
+      {
+        "name": "Twente",
+        "nation": "Holland"
+      },
+      {
+        "name": "Feyenoord",
+        "nation": "Holland"
+      },
+      {
+        "name": "Sparta Rotterdam",
+        "nation": "Holland"
+      },
+      {
+        "name": "Utrecht",
+        "nation": "Holland"
+      },
+      {
+        "name": "Heerenveen",
+        "nation": "Holland"
+      },
+      {
+        "name": "Waalwijk",
+        "nation": "Holland"
+      },
+      {
+        "name": "GA Eagles",
+        "nation": "Holland"
+      },
+      {
+        "name": "Excelsior",
+        "nation": "Holland"
+      },
+      {
+        "name": "Sittard",
+        "nation": "Holland"
+      },
+      {
+        "name": "Groningen",
+        "nation": "Holland"
+      },
+      {
+        "name": "Vitesse",
+        "nation": "Holland"
+      },
+      {
+        "name": "Nijmegen",
+        "nation": "Holland"
+      },
+      {
+        "name": "Cambuur",
+        "nation": "Holland"
+      },
+      {
+        "name": "FC Emmen",
+        "nation": "Holland"
+      },
+      {
+        "name": "FC Volendam",
+        "nation": "Holland"
+      }
+    ]
   },
   {
     "name": "Europa League",
-    "teams": []
+    "teams": [
+      {
+        "name": "Arsenal",
+        "nation": "England"
+      },
+      {
+        "name": "PSV",
+        "nation": "Holland"
+      },
+      {
+        "name": "Bodo/Glimt",
+        "nation": "Norge"
+      },
+      {
+        "name": "Zurich",
+        "nation": "Schweiz"
+      },
+      {
+        "name": "Fenerbahce",
+        "nation": "Tyrkiet"
+      },
+      {
+        "name": "Rennes",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "AEK Larnaca",
+        "nation": "Cypern"
+      },
+      {
+        "name": "Dynamo Kyiv",
+        "nation": "Ukraine"
+      },
+      {
+        "name": "Betis",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Ludogorets",
+        "nation": "Bulgarien"
+      },
+      {
+        "name": "AS Roma",
+        "nation": "Italien"
+      },
+      {
+        "name": "HJK",
+        "nation": "Finland"
+      },
+      {
+        "name": "Royale Union SG",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Union Berlin",
+        "nation": "Tyskland"
+      },
+      {
+        "name": "Braga",
+        "nation": "Portugal"
+      },
+      {
+        "name": "Malmø FF",
+        "nation": "Sverige"
+      },
+      {
+        "name": "Real Sociedad",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Manchester United",
+        "nation": "England"
+      },
+      {
+        "name": "Sheriff Tiraspol",
+        "nation": "Moldova"
+      },
+      {
+        "name": "Omonia",
+        "nation": "Cypern"
+      },
+      {
+        "name": "Lazio",
+        "nation": "Italien"
+      },
+      {
+        "name": "Sturm Graz",
+        "nation": "Østrig"
+      },
+      {
+        "name": "Feyenoord",
+        "nation": "Holland"
+      },
+      {
+        "name": "Midtjylland",
+        "nation": "Danmark"
+      },
+      {
+        "name": "Freiburg",
+        "nation": "Tyskland"
+      },
+      {
+        "name": "Qarabag",
+        "nation": "Azerbajan"
+      },
+      {
+        "name": "Nantes",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Olymoiacos Piraeus",
+        "nation": "Grækenland"
+      },
+      {
+        "name": "Ferencvaros",
+        "nation": "Ungarn"
+      },
+      {
+        "name": "Monaco",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Trabzonspor",
+        "nation": "Tyrkiet"
+      },
+      {
+        "name": "Crvena Zvezda",
+        "nation": "Serbien"
+      }
+    ]
   },
   {
     "name": "Europa Conference League",
-    "teams": []
+    "teams": [
+      {
+        "name": "Basaksehir",
+        "nation": "Tyrkiet"
+      },
+      {
+        "name": "Fiorentina",
+        "nation": "Italien"
+      },
+      {
+        "name": "Hearts",
+        "nation": "Skotland"
+      },
+      {
+        "name": "RFC",
+        "nation": "Estland"
+      },
+      {
+        "name": "West Ham",
+        "nation": "England"
+      },
+      {
+        "name": "Silkeborg",
+        "nation": "Danmark"
+      },
+      {
+        "name": "Anderlecht",
+        "nation": "Belgien"
+      },
+      {
+        "name": "FCSB",
+        "nation": "Schweiz"
+      },
+      {
+        "name": "Villareal",
+        "nation": "Spanien"
+      },
+      {
+        "name": "Lech Poznan",
+        "nation": "Polen"
+      },
+      {
+        "name": "H Beer Sheva",
+        "nation": "Israel"
+      },
+      {
+        "name": "Austria Vienna",
+        "nation": "Østrig"
+      },
+      {
+        "name": "Nice",
+        "nation": "Frankrig"
+      },
+      {
+        "name": "Partizan",
+        "nation": "Serbien"
+      },
+      {
+        "name": "FC Koln",
+        "nation": "Tyskland"
+      },
+      {
+        "name": "Slovacko",
+        "nation": "Tjekkiet"
+      },
+      {
+        "name": "AZ Alkmaar",
+        "nation": "Holland"
+      },
+      {
+        "name": "Dnipro-1",
+        "nation": "Ukraine"
+      },
+      {
+        "name": "Apollon",
+        "nation": "Cypern"
+      },
+      {
+        "name": "Vaduz",
+        "nation": "Lichtenstein"
+      },
+      {
+        "name": "Djurgarden",
+        "nation": "Sverige"
+      },
+      {
+        "name": "Molde",
+        "nation": "Norge"
+      },
+      {
+        "name": "Gent",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Shamroch Rovers",
+        "nation": "Irland"
+      },
+      {
+        "name": "Sivasspor",
+        "nation": "Tyrkiet"
+      },
+      {
+        "name": "CFR Cluj",
+        "nation": "Romenien"
+      },
+      {
+        "name": "Slavia Prague",
+        "nation": "Tjekkiet"
+      },
+      {
+        "name": "FC Ballkani",
+        "nation": "Kosovo"
+      },
+      {
+        "name": "Slovan Bratislava",
+        "nation": "Slovakiet"
+      },
+      {
+        "name": "Basel",
+        "nation": "Schweiz"
+      },
+      {
+        "name": "Pyunik Yerevan",
+        "nation": "Armenien"
+      },
+      {
+        "name": "Zalgiris",
+        "nation": "Letland"
+      }
+    ]
   },
   {
     "name": "Jupiler Pro League",
-    "teams": []
+    "teams": [
+      {
+        "name": "Genk",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Antwerp",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Club Brugge",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Royale Union SG",
+        "nation": "Belgien"
+      },
+      {
+        "name": "St Liege",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Gent",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Westerlo",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Leuven",
+        "nation": "Belgien"
+      },
+      {
+        "name": "St Truiden",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Anderlecht",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Charleroi",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Cercle Brugge KSV",
+        "nation": "Belgien"
+      },
+      {
+        "name": "KV Mechelen",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Oostende",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Eupen",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Kortrijk",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Seraing",
+        "nation": "Belgien"
+      },
+      {
+        "name": "Waregem",
+        "nation": "Belgien"
+      }
+    ]
   }
 ]

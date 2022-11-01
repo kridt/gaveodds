@@ -6,7 +6,7 @@ import { auth, firestoreDb } from "../firebase";
 export default function AddBet() {
   const navigate = useNavigate();
   const [kupon, setKupon] = useState([]);
-  const [indskud, setIndskud] = useState(1);
+  const [indskud, setIndskud] = useState(100);
   const [leagues, setLeagues] = useState([]);
   const [teams, setTeams] = useState([]);
 
@@ -77,7 +77,8 @@ export default function AddBet() {
     var doneKupon = {
       inskud: indskud,
       kampe: kupon,
-      potentielGevinst: totalOddsCalc() * indskud,
+      potentielGevinst: (totalOddsCalc() * indskud).toFixed(2),
+      win: "TBD",
     };
 
     firestoreDb
@@ -86,8 +87,6 @@ export default function AddBet() {
       .then(() => {
         navigate("/adminPanel");
       });
-
-    console.log(doneKupon);
   }
 
   function teamsSet(league) {
@@ -186,6 +185,7 @@ export default function AddBet() {
             <input
               type="number"
               name="indskud"
+              defaultValue={100}
               onBlur={(e) => setIndskud(e.target.value)}
             />
           </div>
@@ -245,7 +245,7 @@ export default function AddBet() {
             }}
           >
             <p>Potentiel gevinst:</p>
-            <p>{totalOddsCalc() * indskud} kr</p>
+            <p>{(totalOddsCalc() * indskud).toFixed(2)} kr</p>
           </div>
         </div>
 
