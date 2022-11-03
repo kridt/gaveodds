@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import AllOddsListKupon from "../components/AllOddsListKupon";
 import { firestoreDb } from "../firebase";
 
@@ -18,13 +19,14 @@ export default function AllOdds() {
 
   return (
     <div>
+      <Link to={"/adminPanel"}>Tilbage</Link>
       <h1>alle odds</h1>
 
       <div className="oddsList">
         {allOdds?.docs?.map((data) => {
           var odds = data.data();
 
-          return <AllOddsListKupon allOdds={odds} id={data.id} />;
+          return <AllOddsListKupon key={data.id} allOdds={odds} id={data.id} />;
         })}
       </div>
     </div>
