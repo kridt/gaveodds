@@ -63,6 +63,7 @@ export default function AllOddsListKupon({ allOdds, id }) {
                     </ul>
                   </nav>
                 </div>
+                <hr style={{ margin: "0 1em" }} />
               </>
             );
           })}
