@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { auth } from "../firebase";
+import { auth, firestoreDb } from "../firebase";
 
 export default function AddBet() {
   const navigate = useNavigate();
@@ -83,12 +83,12 @@ export default function AddBet() {
       win: "tbd",
     };
 
-    /* firestoreDb
+    firestoreDb
       .collection("alleOdds")
       .add(doneKupon)
       .then(() => {
         navigate("/adminPanel");
-      }); */
+      });
   }
 
   function teamsSet(league) {
