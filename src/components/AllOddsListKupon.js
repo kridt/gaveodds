@@ -4,6 +4,8 @@ import { firestoreDb } from "../firebase";
 export default function AllOddsListKupon({ allOdds, id }) {
   const [color, setColor] = useState("blue");
 
+  console.log(allOdds);
+
   useEffect(() => {
     if (allOdds?.win === "true") {
       setColor("green");
@@ -46,12 +48,22 @@ export default function AllOddsListKupon({ allOdds, id }) {
                   style={{
                     display: "flex",
                     justifyContent: "space-evenly",
-                    marginRight: "6em",
                   }}
                 >
-                  <p>{kampe.home}</p>
-                  <p>{"-"}</p>
-                  <p>{kampe.away}</p>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-evenly",
+                      flex: 3,
+                    }}
+                  >
+                    <p>{kampe.home}</p>
+                    <p>{"-"}</p>
+                    <p>{kampe.away}</p>
+                  </div>
+                  <div style={{ flex: 2 }}>
+                    <p>{kampe.dato}</p>
+                  </div>
                 </div>
                 <div>
                   <nav>
