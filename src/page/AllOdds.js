@@ -25,6 +25,7 @@ export default function AllOdds() {
           <Link to={"/adminPanel"}>Tilbage</Link>
 
           <h1>loading...</h1>
+          <i class="fa fa-spinner" aria-hidden="true"></i>
         </>
       ) : (
         <>
