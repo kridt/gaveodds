@@ -5,30 +5,43 @@ import { firestoreDb } from "../firebase";
 
 export default function AllOdds() {
   const [allOdds, setAllOdds] = useState([]);
-  var [win, setWin] = useState("TBD");
-  const [color, setColor] = useState("blue");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     firestoreDb
       .collection("alleOdds")
       .get()
       .then((e) => {
         setAllOdds(e);
+        setLoading(false);
       });
   }, []);
 
   return (
     <div>
-      <Link to={"/adminPanel"}>Tilbage</Link>
-      <h1>alle odds</h1>
+      {loading ? (
+        <>
+          <Link to={"/adminPanel"}>Tilbage</Link>
 
-      <div className="oddsList">
-        {allOdds?.docs?.map((data) => {
-          var odds = data.data();
+          <h1>loading...</h1>
+        </>
+      ) : (
+        <>
+          <Link to={"/adminPanel"}>Tilbage</Link>
+          <h1>alle odds</h1>
 
-          return <AllOddsListKupon key={data.id} allOdds={odds} id={data.id} />;
-        })}
-      </div>
+          <div className="oddsList">
+            {allOdds?.docs?.map((data) => {
+              var odds = data.data();
+
+              return (
+                <AllOddsListKupon key={data.id} allOdds={odds} id={data.id} />
+              );
+            })}
+          </div>
+        </>
+      )}
     </div>
   );
 }
