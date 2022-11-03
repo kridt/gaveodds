@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { auth, firestoreDb } from "../firebase";
+import { auth } from "../firebase";
 
 export default function AddBet() {
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ export default function AddBet() {
       return oddsArray.push(e.odds);
     });
 
-    oddsArray.forEach((e) => {
+    oddsArray?.forEach((e) => {
       return (totalOdds = totalOdds * e);
     });
 
@@ -64,7 +64,7 @@ export default function AddBet() {
 
     setKupon((oldarray) => [...oldarray, matchOdds]);
 
-    /*  document.getElementById("oddsForm").reset(); */
+    document.getElementById("oddsForm").reset();
   }
 
   function dateConverter(e) {
@@ -74,19 +74,21 @@ export default function AddBet() {
 
   function playKupon(e) {
     e.preventDefault();
+
+    console.log(e);
     var doneKupon = {
       inskud: indskud,
       kampe: kupon,
       potentielGevinst: (totalOddsCalc() * indskud).toFixed(2),
-      win: "TBD",
+      win: "tbd",
     };
 
-    firestoreDb
+    /* firestoreDb
       .collection("alleOdds")
       .add(doneKupon)
       .then(() => {
         navigate("/adminPanel");
-      });
+      }); */
   }
 
   function teamsSet(league) {
