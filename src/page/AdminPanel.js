@@ -23,14 +23,28 @@ export default function AdminPanel() {
         }
       }
     }
-  }, [auth, navigate]);
+  }, [navigate]);
 
   return (
     <div>
       <h1>Admin panel</h1>
 
-      <Link to={"/addBet"}>Tilføj en odds</Link>
-      <Link to={"/allodds"}>Se alle odds</Link>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <Link style={{ marginBottom: "3em" }} to={"/addBet"}>
+          Tilføj en odds
+        </Link>
+        <Link style={{ marginBottom: "3em" }} to={"/allodds"}>
+          Se alle odds
+        </Link>
+        <Link style={{ marginBottom: "3em" }} to={"/stats"}>
+          Vores stats
+        </Link>
+      </div>
     </div>
   );
 }

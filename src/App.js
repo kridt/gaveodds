@@ -10,6 +10,7 @@ import UpdateProfile from "./functions/UpdateProfile";
 import AdminPanel from "./page/AdminPanel";
 import AddBet from "./page/AddBet";
 import AllOdds from "./page/AllOdds";
+import AdminStats from "./page/AdminStats";
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
 
             <Route element={<ProtectedRoute />}>
               <Route path="/forgotPassword" element={<ForgotPassword />} />
+            </Route>
+            <Route element={<ProtectedRoute />}>
+              <Route path="/stats" element={<AdminStats />} />
             </Route>
 
             <Route path="/signup" element={<SignUp />} />

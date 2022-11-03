@@ -16,7 +16,7 @@ export default function AllOddsListKupon({ allOdds, id }) {
     if (allOdds?.win === `"tbd"`) {
       setColor("blue");
     }
-  }, []);
+  }, [allOdds?.win]);
 
   function changeWin(e) {
     const tryk = e.target.name;
