@@ -58,13 +58,13 @@ export default function AddBet() {
       dato: dateConverter(datoForKamp),
       home: e.target.home.value,
       away: e.target.away.value,
-      play: e.target.odds.value,
+      play: e.target.odds.value.split(", "),
       league: e.target.league.value,
     };
 
     setKupon((oldarray) => [...oldarray, matchOdds]);
 
-    document.getElementById("oddsForm").reset();
+    /*  document.getElementById("oddsForm").reset(); */
   }
 
   function dateConverter(e) {
@@ -133,7 +133,6 @@ export default function AddBet() {
 
             <datalist id="homeTeam">
               {teams?.map((e) => {
-                console.log(e);
                 return <option key={e.name} value={e.name}></option>;
               })}
             </datalist>
@@ -149,8 +148,17 @@ export default function AddBet() {
             </datalist>
           </div>
 
-          <div>
-            <label htmlFor="odds">Hvad skal vi oddse?</label>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              margin: "1em 0",
+            }}
+          >
+            <div style={{ alignSelf: "center" }}>
+              <label htmlFor="odds">Hvad skal vi oddse?</label>
+              <p>skal spareres med komma</p>
+            </div>
             <textarea
               required
               name="odds"
@@ -222,7 +230,13 @@ export default function AddBet() {
                     bottom: "20px",
                   }}
                 >
-                  {e.play}
+                  <nav style={{ flex: "9" }}>
+                    <ul>
+                      {e?.play?.map((odds) => {
+                        return <li>{odds}</li>;
+                      })}
+                    </ul>
+                  </nav>
                 </span>
               </>
             );
