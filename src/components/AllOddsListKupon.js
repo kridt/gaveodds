@@ -32,9 +32,49 @@ export default function AllOddsListKupon({ allOdds, id }) {
       firestoreDb.collection("alleOdds").doc(id).update({ win: "false" });
     }
   }
+
   return (
     <div style={{ marginBottom: "2em", backgroundColor: color }}>
-      <h1>hello world</h1>
+      <div>
+        <div>
+          {allOdds?.kampe?.map((kampe) => {
+            console.log(kampe);
+
+            return (
+              <>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-evenly",
+                    marginRight: "6em",
+                  }}
+                >
+                  <p>{kampe.home}</p>
+                  <p>{"-"}</p>
+                  <p>{kampe.away}</p>
+                </div>
+                <div>
+                  <nav>
+                    <ul style={{ textAlign: "left", fontSize: ".85em" }}>
+                      {kampe?.play?.map((play) => {
+                        return <li>{play}</li>;
+                      })}
+                      <p>Odds: {kampe.odds}</p>
+                    </ul>
+                  </nav>
+                </div>
+              </>
+            );
+          })}
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+          <p>Indskud: {allOdds.inskud} kr</p>
+          <p>Odds: {parseFloat(allOdds.potentielGevinst) / allOdds.inskud}</p>
+        </div>
+        <div>
+          <p>Gevinst: {allOdds.potentielGevinst} kr</p>
+        </div>
+      </div>
 
       <div style={{ display: "flex", justifyContent: "space-evenly" }}>
         <button name="ja" onClick={(e) => changeWin(e)}>
