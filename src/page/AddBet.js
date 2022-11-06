@@ -10,6 +10,8 @@ export default function AddBet() {
   const [leagues, setLeagues] = useState([]);
   const [teams, setTeams] = useState([]);
   const [oddsText, setOddsText] = useState("");
+  const [homeTeam, setHomeTeam] = useState("x");
+  const [awayTeam, setawayTeam] = useState("x");
 
   useEffect(() => {
     axios.get("/ligaer.json").then((data) => setLeagues(data.data));
@@ -136,7 +138,12 @@ export default function AddBet() {
 
           <div>
             <label htmlFor="home">Hjemmehold:</label>
-            <input required list="homeTeam" name="home" />
+            <input
+              required
+              list="homeTeam"
+              onChange={(e) => setHomeTeam(e.target.value)}
+              name="home"
+            />
 
             <datalist id="homeTeam">
               {teams?.map((e) => {
@@ -146,7 +153,12 @@ export default function AddBet() {
           </div>
           <div>
             <label htmlFor="away">Udehold:</label>
-            <input required list="awayTeam" name="away" />
+            <input
+              required
+              list="awayTeam"
+              onChange={(e) => setawayTeam(e.target.value)}
+              name="away"
+            />
 
             <datalist id="awayTeam">
               {teams?.map((e) => {
@@ -155,15 +167,47 @@ export default function AddBet() {
             </datalist>
           </div>
 
-          <div>
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                shortcutOdds("Over 0 hjørnespark til x i x halvleg");
-              }}
-            >
-              over 0 hjørnespark til x i første halvleg
-            </button>
+          <div style={{ display: "flex" }}>
+            <div>
+              <button
+                style={{ width: "70%", margin: "1em 0" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  shortcutOdds("Over 0 hjørnespark til x i x halvleg");
+                }}
+              >
+                over 0 hjørnespark til {homeTeam} i første halvleg
+              </button>
+              <button
+                style={{ width: "70%" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  shortcutOdds("Over 0 hjørnespark til x i x halvleg");
+                }}
+              >
+                over 0 hjørnespark til {awayTeam} i første halvleg
+              </button>
+            </div>
+            <div>
+              <button
+                style={{ width: "70%", margin: "1em 0" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  shortcutOdds("Over 0 hjørnespark til x i x halvleg");
+                }}
+              >
+                over 0 hjørnespark til {homeTeam} i anden halvleg
+              </button>
+              <button
+                style={{ width: "70%" }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  shortcutOdds("Over 0 hjørnespark til x i x halvleg");
+                }}
+              >
+                over 0 hjørnespark til {awayTeam} i anden halvleg
+              </button>
+            </div>
           </div>
           <div
             style={{
