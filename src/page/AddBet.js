@@ -9,6 +9,7 @@ export default function AddBet() {
   const [indskud, setIndskud] = useState(100);
   const [leagues, setLeagues] = useState([]);
   const [teams, setTeams] = useState([]);
+  const [oddsText, setOddsText] = useState("");
 
   useEffect(() => {
     axios.get("/ligaer.json").then((data) => setLeagues(data.data));
@@ -63,8 +64,8 @@ export default function AddBet() {
     };
 
     setKupon((oldarray) => [...oldarray, matchOdds]);
-
     document.getElementById("oddsForm").reset();
+    setOddsText("");
   }
 
   function dateConverter(e) {
@@ -92,8 +93,12 @@ export default function AddBet() {
   }
 
   function teamsSet(league) {
-    setTeams(leagues?.find((leaguer) => leaguer.name === league).teams);
-    console.log(teams);
+    setTeams(leagues?.find((leaguer) => leaguer.name === league)?.teams);
+  }
+
+  function shortcutOdds(odds) {
+    setOddsText(oddsText.concat("", odds));
+    console.log(oddsText);
   }
 
   return (
@@ -150,6 +155,16 @@ export default function AddBet() {
             </datalist>
           </div>
 
+          <div>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                shortcutOdds("Over 0 hjørnespark til x i x halvleg");
+              }}
+            >
+              over 0 hjørnespark til x i første halvleg
+            </button>
+          </div>
           <div
             style={{
               display: "flex",
@@ -167,6 +182,8 @@ export default function AddBet() {
               id="odss"
               cols="30"
               rows="10"
+              value={oddsText}
+              onChange={(e) => setOddsText(e.target.value)}
             ></textarea>
           </div>
 
