@@ -173,7 +173,9 @@ export default function AddBet() {
                 style={{ width: "70%", margin: "1em 0" }}
                 onClick={(e) => {
                   e.preventDefault();
-                  shortcutOdds("Over 0 hjørnespark til x i x halvleg");
+                  shortcutOdds(
+                    `Over 0 hjørnespark til ${homeTeam} i første halvleg`
+                  );
                 }}
               >
                 over 0 hjørnespark til {homeTeam} i første halvleg
@@ -182,7 +184,9 @@ export default function AddBet() {
                 style={{ width: "70%" }}
                 onClick={(e) => {
                   e.preventDefault();
-                  shortcutOdds("Over 0 hjørnespark til x i x halvleg");
+                  shortcutOdds(
+                    `Over 0 hjørnespark til ${awayTeam} i første halvleg`
+                  );
                 }}
               >
                 over 0 hjørnespark til {awayTeam} i første halvleg
@@ -193,7 +197,9 @@ export default function AddBet() {
                 style={{ width: "70%", margin: "1em 0" }}
                 onClick={(e) => {
                   e.preventDefault();
-                  shortcutOdds("Over 0 hjørnespark til x i x halvleg");
+                  shortcutOdds(
+                    `Over 0 hjørnespark til ${homeTeam} i anden halvleg`
+                  );
                 }}
               >
                 over 0 hjørnespark til {homeTeam} i anden halvleg
@@ -202,7 +208,9 @@ export default function AddBet() {
                 style={{ width: "70%" }}
                 onClick={(e) => {
                   e.preventDefault();
-                  shortcutOdds("Over 0 hjørnespark til x i x halvleg");
+                  shortcutOdds(
+                    `Over 0 hjørnespark til ${awayTeam} i anden halvleg`
+                  );
                 }}
               >
                 over 0 hjørnespark til {awayTeam} i anden halvleg
